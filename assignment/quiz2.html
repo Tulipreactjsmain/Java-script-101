@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Assignment</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        max-width: 960px;
+        background-color: #dbcdc6;
+        margin: 0 auto;
+      }
+      .container {
+        position: relative;
+        width: 700px;
+        height: 400px;
+        background-color: #7b506f;
+        padding: 20px;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      }
+      .question {
+        color: #dfc2b9;
+      }
+      .answer {
+        color: #e2d4d0;
+        font-size: 20px;
+        margin-bottom: 25px;
+      }
+      .submit {
+        background-color: #262046;
+        color: white;
+        font-size: 20px;
+        width: 50%;
+        padding: 10px;
+        font-size: 20px;
+        position: absolute;
+        bottom: -15%;
+        left: 25%;
+        border-radius: 20px;
+        animation: myAnim 2s ease 0s 1 normal forwards;
+        box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+      }
+      @keyframes myAnim {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(-2px, 2px);
+	}
+
+	40% {
+		transform: translate(-2px, -2px);
+	}
+
+	60% {
+		transform: translate(2px, 2px);
+	}
+
+	80% {
+		transform: translate(2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="game">
+        <h1 class="question"></h1>
+        <div class="answer">
+            <input>
+        </div>
+        <button class="submit">Submit</button>
+      </div>
+    </div>
+    <script src="./quiz2.js"></script>
+  </body>
+</html>

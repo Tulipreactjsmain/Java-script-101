@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&display=swap");
+
+      body {
+        font-family: "Nunito Sans", sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        background: rgb(255, 255, 255);
+
+        color: #6D676E;
+      }
+      .container {
+        display: flex;
+        font-family: "Nunito Sans", sans-serif;
+      }
+      #style {
+        padding: 4px;
+        border-radius: 3px;
+        box-shadow: 6px 4px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 6px 4px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 6px 4px 5px 0px rgba(0, 0, 0, 0.75);
+        border: none;
+        margin: 20px 0px;
+      }
+      h1 {
+        font-weight: 500;
+      }
+      .cats {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        transition: width 1s ease 0s;
+      }
+      .cat-items {
+        cursor: pointer;
+        font-size: 20px;
+        padding: 5px;
+        width: 100px;
+      }
+      .product-box {
+        flex: 4;
+      }
+      .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .product {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      img {
+        width: 250px;
+        height: 250px;
+        transition: width 1s ease 0s;
+      }
+      img:hover {
+        width: 50%;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-menu">
+        <input type="text" placeholder="Search" class="search" id="style" />
+        <h1>Categories</h1>
+        <div class="cats"></div>
+        <h1>Filter Price</h1>
+        <div class="Price">
+          <input type="range" class="price-range" />
+          <span class="price-value"></span>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="products"></div>
+      </div>
+    </div>
+    <script src="./product.js"></script>
+  </body>
+</html>

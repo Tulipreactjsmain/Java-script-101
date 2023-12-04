@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        max-width: 960px;
+        margin: 0 auto;
+        background-color: rgb(78, 78, 157);
+      }
+
+      .container {
+        position: relative;
+        width: 700px;
+        height: 400px;
+        background-color: rgb(222, 222, 222);
+        padding: 20px;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      }
+
+      .question {
+        font-size: 30px;
+        text-align: center;
+      }
+      .answer {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: rgb(86, 88, 91);
+      }
+      .submit {
+        background-color: rgb(115, 86, 143);
+        color: white;
+        border: none;
+        width: 50%;
+        padding: 10px;
+        font-size: 20px;
+        position: absolute;
+        bottom: -15%;
+        left: 25%;
+        border-radius: 20px;
+      }
+      .correct {
+        color: aliceblue;
+      }
+      .wrong {
+        color: antiquewhite;
+      }
+      .play {
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 20px;
+      }
+      .result { 
+        display: none;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="game">
+        <h1 class="question">Questions</h1>
+        <div class="answer"></div>
+        <button class="submit">Submit</button>
+      </div>
+      <div class="result">
+        <h1>Your score</h1>
+        <h3 class="correct"></h3>
+        <h3 class="wrong"></h3>
+        <button class="play">Play again</button>
+      </div>
+    </div>
+    <script src="./quiz.js"></script>
+  </body>
+</html>
